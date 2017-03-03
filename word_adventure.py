@@ -1,3 +1,5 @@
+# Git version - should use this one for now.  
+
 name= raw_input("What is your name: ")
 raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
 raw_input("But today is too quiet...")
