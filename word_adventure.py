@@ -1,5 +1,4 @@
-# Git version - should use this one for now.  
-
+# Git version - should use this one for now.
 name= raw_input("What is your name: ")
 raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
 raw_input("But today is too quiet...")
@@ -37,10 +36,26 @@ raw_input("Maybe you are just too bored about your peaceful life. Maybe small in
 raw_input("Now let's start with a simple game.")
 raw_input("...")
 choice2= raw_input("BOB is going to play a little game with you. You have no reason to accept, at the end, BOB and the victim may just be people who are trying to do those 'social experiment' on you. You decided to: a. Accept b. Reject...")
-if choice2 == "b":
-    
+if choice2.lower() == "b" or choice2.lower()=="reject":
+    raw_input("You reject BOB. There is no more text message coming, you are left alone again. You lay back to the couch, no one is going to bother you anymore.")
+    raw_input("you are back in peace. You are safe again.")
+    raw_input("...")
+    raw_input("You fall asleep")
+    raw_input("...")
+    raw_input("Someone opened your door. You can hear it. You walk to your front door.")
+    raw_input("No one is there.")
+    raw_input("Just to make sure you open the door. The sunlight is too bright, so weird it is already afternoon. You look down, you find a package.")
+    raw_input("It is soaked in blood.")
+    raw_input("...")
+    raw_input("You are sitting in the interrogation room. It looks like the one you have seen in movies. Grey wall, grey wall seems to crush you.")
+    raw_input("...")
+    raw_input("Do you recognize the ring on her finger? Who were you with before you received the package? Do you know you are in big trouble?")
+    raw_input("It is that serial killer who already killed 28 people, the news is everywhere, the one who received the package from that killer were all killed.")
+    raw_input("We have to protect you, maybe we could also catch that infamous killer. But the choice is still in your hand, you decide whether we will send people to be around you or not.")
+    raw_input("...")
+    choice3 = ("Now you know BOB is an extremely dangerous person, your blood is pumping faster, a sense of livliness in your plain life. You decided to: a. Accept b. Reject")
 #from here accept the game
-if choice2 == "a":
+if choice2.lower() == "a" or choice2.lower()== "accept":
     raw_input("'I'm glad that you agree, things will be really messed up if you reject me. After all, you could quit anytime you want, but I won't guarantee what will happen on you and the victim.'")
     raw_input("'The game is really simple, I will give you two riddles, you just have to find out the answer and send it to me. You will not be able to get the next riddle unless you answer the previous answer correctly.'")
     raw_input("Don't worry you will have three chances for each riddle, and the answers are all inside your head. Seems really fair, right?")
@@ -64,6 +79,5 @@ if choice2 == "a":
     if q3 != "He shot his customers and blew them up":
         print "'I know you will have a hard time answering this, I will just tell you the answer. The photographer shot the customers and blew them up!"
 # come back later
-
 
 
