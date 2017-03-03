@@ -36,6 +36,11 @@ raw_input("Maybe you are just too bored about your peaceful life. Maybe small in
 raw_input("Now let's start with a simple game.")
 raw_input("...")
 choice2= raw_input("BOB is going to play a little game with you. You have no reason to accept, at the end, BOB and the victim may just be people who are trying to do those 'social experiment' on you. You decided to: a. Accept b. Reject...")
+#while choice 2 != a and b
+while choice2.lower() != "b" and choice2.lower()!="reject" and choice2.lower() != "a" and choice2.lower()!= "accept":
+    print "You cannot always run away from making decison. It is your obligation to decide."
+    choice2= raw_input("Now, pick one: a. Accept b. Reject...")
+#reject to play
 if choice2.lower() == "b" or choice2.lower()=="reject":
     raw_input("You reject BOB. There is no more text message coming, you are left alone again. You lay back to the couch, no one is going to bother you anymore.")
     raw_input("you are back in peace. You are safe again.")
@@ -45,6 +50,7 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
     raw_input("Someone opened your door. You can hear it. You walk to your front door.")
     raw_input("No one is there.")
     raw_input("Just to make sure you open the door. The sunlight is too bright, so weird it is already afternoon. You look down, you find a package.")
+    raw_input("...")
     raw_input("It is soaked in blood.")
     raw_input("...")
     raw_input("You are sitting in the interrogation room. It looks like the one you have seen in movies. Grey wall, grey wall seems to crush you.")
@@ -53,8 +59,14 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
     raw_input("It is that serial killer who already killed 28 people, the news is everywhere, the one who received the package from that killer were all killed.")
     raw_input("We have to protect you, maybe we could also catch that infamous killer. But the choice is still in your hand, you decide whether we will send people to be around you or not.")
     raw_input("...")
-    choice3 = ("Now you know BOB is an extremely dangerous person, your blood is pumping faster, a sense of livliness in your plain life. You decided to: a. Accept b. Reject")
-#from here accept the game
+    choice3 = raw_input("Now you know BOB is an extremely dangerous person, your blood is pumping faster, a sense of livliness in your plain life. You decided to: a. Accept b. Reject...")
+# if accept protection
+if choice3.lower() == "a" or choice3.lower() == "accept":
+    print "bo"
+# if reject protection
+if choice3.lower() == "b" or choice3.lower() == "reject":
+    print "bob"
+#accept the game
 if choice2.lower() == "a" or choice2.lower()== "accept":
     raw_input("'I'm glad that you agree, things will be really messed up if you reject me. After all, you could quit anytime you want, but I won't guarantee what will happen on you and the victim.'")
     raw_input("'The game is really simple, I will give you two riddles, you just have to find out the answer and send it to me. You will not be able to get the next riddle unless you answer the previous answer correctly.'")
@@ -78,6 +90,7 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
             q2 = raw_input("Almost everyone sees me without noticing me, For what is beyond is what he or she seeks. What am I? (1 word):  ")
     if q3 != "He shot his customers and blew them up":
         print "'I know you will have a hard time answering this, I will just tell you the answer. The photographer shot the customers and blew them up!"
-# come back later
+
+
 
 
