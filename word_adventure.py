@@ -12,7 +12,7 @@ raw_input("You fall asleep.")
 raw_input("...")
 raw_input("You sit right next to someone, you cannot see her face. But you know you cherish her. She starts to run away from you, you desperately try to grab her hand. Yet, no matter how hard you try you just can't reach her.")
 raw_input("...")
-# the dream, forshadow something about the true end, change the gender of the person in the dream next time
+# the dream, forshadow something about the true end
 raw_input("You are woken up by the buzzing of your phone. Someone is texting you, apparently, that person is really urgent. You have over 99 unread text message.")
 for x in range(5):
     print "'Help'"
@@ -49,7 +49,7 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
     raw_input("you are back in peace. You are safe again.")
     raw_input("...")
     raw_input("You fall asleep")
-    raw_input("You sit right next to someone, you cannot see his face. But you know you cherish him. He starts to run away from you, you desperately try to grab his hand. Yet, no matter how hard you try you just can't reach him.")
+    raw_input("You sit right next to someone, you cannot see her face. But you know you cherish her. She starts to run away from you, you desperately try to grab her hand. Yet, no matter how hard you try you just can't reach her.")
     raw_input("...")
     raw_input("Someone opened your door. You can hear it. You walk to your front door.")
     raw_input("No one is there.")
@@ -130,10 +130,39 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
                         ("poison", "big monster"): False
                     }
                     def game2(weapon, monster):
-                        return directions[(weapon,moster)]
+                        return directions[(weapon,monster)]
                     def monster():
                         return random.choice(["big monster", "medium monster", "small monster"])
                     weapon = raw_input("You find a bat, a gun , and a bottle of poison. You chose(just type the name of the weapon)...")
+                    while weapon != "bat" and weapon != "gun" and weapon != " poison":
+                        print "You just need to type: bat, gun, or poison. "
+                        weapon= raw_input("Quick! Pick one: ")
+                    monster = monster()
+                    result = game2(weapon, monster)
+                    if result is True:
+                        print "Congradulation! You kill the monster! You receive a golden ring as a prize!"
+                        raw_input("'Now take off your glasses.' You hear BOB talking to you. But you can't do what he says, there is no glasses on you.")
+                        raw_input("'Ah, forget about the glasses now, it won't hurt you. Did you found anything when you killed the monster?")
+                        raw_input("You tell him about the golden ring.")
+                        raw_input("'Have you seen this ring before? Do you know the owner of this ring? Come on! You must remember something! There must be something left in your head!'")
+                        raw_input("'No? Nothing? Oh forget about it! It is not the right path, your brain is not ready yet. Maybe next time, next time we will find something.'")
+                        raw_input("'Restart the system, quick, we don't have much time left!'")
+                        raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
+                        raw_input("But today is too quiet...")
+                        raw_input("You do not see Mr. B walking his dogs toady, they walk pass you every day. You like his dogs, and they also seem to like you.....")
+                    if result is False:
+                        print "You failed to kill by the monster. I guess you are not ready yet."
+                        raw_input("You lay on the ground, it hurts. The pain caused by the attack of the monster feel so real, it feels like you are actually bleeding. 'Hey BOB, I failed the game, what will happen to me?' You ask BOB.")
+                        raw_input("...")
+                        raw_input("At least one hour had passed, you start to wonder how come no one walking pass you notices something is wrong with you. You try to take off the glasses, yet, it seems like the glasses have dissappeared.")
+                        raw_input("'System reloading...' You say this infront of your eyes, apparently you are still in the virtual reality created by that glasses.")
+                        raw_input("Suddenly, everything goes dark. After a few seconds, your vision becomes clearer and brighter.")
+                        raw_input("You hear people talking... 'I guess our subject's brain is not ready yet'")
+                        raw_input("'Apparently, that was not the right path to take.'")
+                        raw_input("'I hope this time, we will find out the answer hidden in your head.'")
+                        raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
+                        raw_input("But today is too quiet...")
+                        raw_input("You do not see Mr. B walking his dogs toady, they walk pass you every day. You like his dogs, and they also seem to like you.....")
 #accept the game
 if choice2.lower() == "a" or choice2.lower()== "accept":
     raw_input("'I'm glad that you agree, things will be really messed up if you reject me. After all, you could quit anytime you want, but I won't guarantee what will happen on you and the victim.'")
@@ -155,12 +184,14 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
             raw_input("'Opps~ There is no chance left'")
             raw_input("You feel something is pressed against your head")
             raw_input("Looks like your brain is not ready yet")
+            print "You has been shot by someone, I assume it is BOB. I think this path is not the right one to the answer"
             return "You has been shot by someone, I assume it is BOB. I think this path is not the right one to the answer"
         for m in range(4):
             if q2.lower() == "window" and m <= 2:
                 q3 = raw_input("Next question: Why was the photographer arrested?")
                 if q3 != "He shot his customers and blew them up":
-                    return "'I know you will have a hard time answering this, I will just tell you the answer. The photographer shot the customers and blew them up!"
+                    print "'I know you will have a hard time answering this, I will just tell you the answer. The photographer shot the customers and blew them up!'"
+                    return "'I know you will have a hard time answering this, I will just tell you the answer. The photographer shot the customers and blew them up!'"
             elif q2.lower() != "window" and m < 2:
                 print "Your answer is not correct " + str(2-m) + " out of 3 chances left~"
                 q2 = raw_input("Almost everyone sees me without noticing me, For what is beyond is what he or she seeks. What am I? (1 word):  ")
@@ -170,9 +201,9 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
             raw_input("'Opps~ There is no chance left'")
             raw_input("You feel something is pressed against your head")
             raw_input("Looks like your brain is not ready yet")
+            print "You has been shot by someone, I assume it is BOB. I think this path is not the right one to the answer."
             return "You has been shot by someone, I assume it is BOB. I think this path is not the right one to the answer."
-    print end1()
-
-
+    if end1() == "'I know you will have a hard time answering this, I will just tell you the answer. The photographer shot the customers and blew them up!'":
+        print "bob"
 
 
