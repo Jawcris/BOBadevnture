@@ -10,7 +10,7 @@ raw_input("No reply.")
 raw_input("...")
 raw_input("You fall asleep.")
 raw_input("...")
-raw_input("You sit right next to someone, you cannot see her face. But you know you cherish her. She starts to run away from you, you desperately try to grab her hand. Yet no matter how hard you try you just can't reach her.")
+raw_input("You sit right next to someone, you cannot see her face. But you know you cherish her. She starts to run away from you, you desperately try to grab her hand. Yet, no matter how hard you try you just can't reach her.")
 raw_input("...")
 # the dream, forshadow something about the true end, change the gender of the person in the dream next time
 raw_input("You are woken up by the buzzing of your phone. Someone is texting you, apparently, that person is really urgent. You have over 99 unread text message.")
@@ -49,6 +49,7 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
     raw_input("you are back in peace. You are safe again.")
     raw_input("...")
     raw_input("You fall asleep")
+    raw_input("You sit right next to someone, you cannot see his face. But you know you cherish him. He starts to run away from you, you desperately try to grab his hand. Yet, no matter how hard you try you just can't reach him.")
     raw_input("...")
     raw_input("Someone opened your door. You can hear it. You walk to your front door.")
     raw_input("No one is there.")
@@ -58,12 +59,12 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
     raw_input("...")
     raw_input("You are sitting in the interrogation room. It looks like the one you have seen in movies. Grey wall, grey wall seems to crush you.")
     raw_input("...")
-    raw_input("Do you recognize the ring on her finger? Who were you with before you received the package? Do you know you are in big trouble?")
-    raw_input("It is that serial killer who already killed 28 people, the news is everywhere, the one who received the package from that killer were all killed.")
+    raw_input("Do you recognize the ring on her finger? Who were you with before you received the package? Do you recognize these faces?")
+    raw_input("These are the works done by that serial killer who already killed 28 people, of course, how could you not know, the news is everywhere!")
     raw_input("We have to protect you, maybe we could also catch that infamous killer. But the choice is still in your hand, you decide whether we will send people to be around you or not.")
     raw_input("...")
     #choice 3- have protection or not
-    choice3 = raw_input("Now you know BOB is an extremely dangerous person, your blood is pumping faster, a sense of livliness in your plain life. You decided to: a. Accept b. Reject...")
+    choice3 = raw_input("Now, you know BOB is an extremely dangerous person, your blood is pumping faster, a sense of livliness in your plain life. You decided to: a. Accept b. Reject...")
     while choice3.lower() != "b" and choice3.lower()!="reject" and choice3.lower() != "a" and choice3.lower()!= "accept":
         print "You cannot always run away from making decison. It is your obligation to decide."
         choice3= raw_input("Now, pick one: a. Accept b. Reject...")
@@ -74,22 +75,65 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
         if choice3.lower() == "b" or choice3.lower() == "reject":
             raw_input("You reject the protection. Deeply in your mind you know that this sense of liveliness is going to lead you into something horrible.")
             raw_input("...")
-            raw_input("You sit down in your cozy couch in your living room. You feel isolated once again. No one is going to intrude your life, you think surprisingly confidently.")
+            raw_input("You sit down in your cozy couch in your living room. You feel isolated once again. No one is going to intrude your life, you think confidently.")
             raw_input("...")
             raw_input("Your phone buzzes, you received a text message.")
             raw_input("'Hi! This is BOB! We haven't talked for so long, I am starting to miss you. Please come to The Great Park we shall have a face-to-face meeting there.'")
             raw_input("'And everything will be clear.'")
-            raw_input("The Great Park what a familiar name. Of course, everyone in this area know about this park, but there is something else about this park that triggers you emotion.")
+            raw_input("The Great Park, what a familiar name. Of course, everyone in this area know about this park, but there is something else about this park that triggers your feeling.")
             choice4= raw_input("You decide to: a. Accept b. Reject...")
             while choice4.lower() != "b" and choice4.lower()!="reject" and choice4.lower() != "a" and choice4.lower()!= "accept":
                 print "You cannot always run away from making decison. It is your obligation to decide."
                 choice4= raw_input("Now, pick one: a. Accept b. Reject...")
                 while choice4 != "a" and choice4 != "accept":
                     print "You should go to the park! You can't let this strange sense of familiarity to be stuck in your brain forever!"
-                    choice4= raw_input("Now, pick one: a. Accept b. Reject...")
+                    choice4= raw_input("Now, try again: a. Accept b. Reject...")
 # go to the park
             if choice4.lower()== "a" or choice4.lower()== "accept":
-                        print "bbb"
+                raw_input("...")
+                raw_input("You arrive at the park, you do not like this place, but everything about this park is so familiar to you. You saw a bench under a huge oak tree, you want to sit on that bench.")
+                raw_input("Someone is already sitting on that bench. You just stand and wait until he leaves.")
+                raw_input("Now you are sitting on the bench under the oak tree. It is Spring right now; the sun is shining and warm wind is blowing across your face. You think BOB won't show up soon.")
+                raw_input("You fall asleep.")
+                raw_input("...")
+                raw_input("You are hiding behind the bushes, she is walking on the natural path.  Leaves cover the ground, it must be Winter or Fall. You breathe heavily, looks like you are trying really hard to make sure she doesn't see you. When she walks pass a bench, you jumped out of the bushes. You grab her hand. She is resisting, and you try to calm her down...")
+                raw_input("...")
+                raw_input("'You are going to get sick if you sleep here, name. Wake up'")
+                raw_input("You open your eyes, yet everything looks so blurry.")
+                raw_input("'Don't worry, it is just some privacy protection mechanism. Your vision will be restored after you win the game. See, I just want to play a small game with you, you rejected me last time, so this time I bring a different game. I spend a lot of money on this by the way.'")
+                choice5= raw_input("BOB wants to play a game with you decide to: a. Accept b. Reject...")
+                while choice5.lower() != "b" and choice5.lower()!="reject" and choice5.lower() != "a" and choice5.lower()!= "accept":
+                    print "You cannot always run away from making decison. It is your obligation to decide."
+                    choice5= raw_input("Now, are you going to play with BOB: a. Accept b. Reject...")
+#reject the game
+                if choice5.lower() == "b" or choice5.lower() == "reject":
+                    raw_input("'I remember I mentioned that your vision will be restored after you play this game with me. Since you are not playing it with me, just pray you are going to adapt to your blindness'")
+                    raw_input("You are sitting on the bench, you can't go anywhere. BOB have already left, glad that he did not kill you.")
+                    raw_input("While you are sitting, you feel extremely calm, now, without your vision, you are isolated from a lot of information of the outside world. You enter a simple and peaceful world. You stand up, and want to embrace this brand-new world...")
+                    raw_input("BANG")
+                    raw_input("You have been hit in the head by some metal rod, maybe a baseball bat. Warm liquid strains down your head. You lose conscious. It is har to believe you will wake up again.")
+                    raw_input("I assume it is BOB, I guess you did not make the right choice.")
+#accept the game
+                if choice5.lower() == "a" or choice5.lower() == "accept":
+                    raw_input("'The game is really simple. Here put on this pair of glasses, after I start the game, you will enter a virtual reality. There will be three weapons lying infornt of you, just follow your heart and pick one. Then you just need to fight the monster using your weapon. There are three types of monter, you never know which monster you will encounter. If you win, I will bring peace back to your life... Now, game starts!")
+                    raw_input("You are not sure about what will happen if you lose.")
+                    import random
+                    directions = {
+                        ("bat", "little monster"): True,
+                        ("gun", "little monster"): False,
+                        ("poison", "little monster"): True,
+                        ("bat", "medium monster"): True,
+                        ("gun", "medium monster"): True,
+                        ("posion'", "medium monster"): False,
+                        ("bat", "big monster"): False,
+                        ("gun", "big monster"): True,
+                        ("poison", "big monster"): False
+                    }
+                    def game2(weapon, monster):
+                        return directions[(weapon,moster)]
+                    def monster():
+                        return random.choice(["big monster", "medium monster", "small monster"])
+                    weapon = raw_input("You find a bat, a gun , and a bottle of poison. You chose(just type the name of the weapon)...")
 #accept the game
 if choice2.lower() == "a" or choice2.lower()== "accept":
     raw_input("'I'm glad that you agree, things will be really messed up if you reject me. After all, you could quit anytime you want, but I won't guarantee what will happen on you and the victim.'")
@@ -111,7 +155,7 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
             raw_input("'Opps~ There is no chance left'")
             raw_input("You feel something is pressed against your head")
             raw_input("Looks like your brain is not ready yet")
-            return "You has been shot by someone, I assume it is BOB."
+            return "You has been shot by someone, I assume it is BOB. I think this path is not the right one to the answer"
         for m in range(4):
             if q2.lower() == "window" and m <= 2:
                 q3 = raw_input("Next question: Why was the photographer arrested?")
@@ -126,7 +170,7 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
             raw_input("'Opps~ There is no chance left'")
             raw_input("You feel something is pressed against your head")
             raw_input("Looks like your brain is not ready yet")
-            return "You has been shot by someone, I assume it is BOB."
+            return "You has been shot by someone, I assume it is BOB. I think this path is not the right one to the answer."
     print end1()
 
 
