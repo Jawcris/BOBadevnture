@@ -184,7 +184,7 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
             raw_input("'Opps~ There is no chance left'")
             raw_input("You feel something is pressed against your head")
             raw_input("Looks like your brain is not ready yet")
-            print "You has been shot by someone, I assume it is BOB. I think this path is not the right one to the answer"
+            print "You has been shot by someone, I assume it is BOB."
             return False
         for m in range(4):
             if q2.lower() == "window" and m <= 2:
@@ -204,7 +204,7 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
             raw_input("'Opps~ There is no chance left'")
             raw_input("You feel something is pressed against your head")
             raw_input("Looks like your brain is not ready yet")
-            print "You has been shot by someone, I assume it is BOB. I think this path is not the right one to the answer."
+            print "You has been shot by someone, I assume it is BOB."
             return False
 #if player answer the riddle correctly
     if end1() is True:
@@ -227,25 +227,82 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
             raw_input("'Restart the system, quick! We don't have much time left, let's just hope next time, we will find the right path and the answer.'")
             raw_input("...")
             raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
-            raw_input("But today is too quiet...")
+            raw_input("But today is too quiet.......")
         if choice6.lower() == "a" or choice6.lower() == "accept":
             raw_input("You think the safest way right now is to what BOB says. You head toward your bed room.")
             raw_input("You are about to go pass your kitchen, there are knives in the kitchen...")
-            choice7= raw_input("a. Get a knife it may be useful later b. Keep walking you are running out of time")
-            while choice7.lower() != "b" and choice7.lower()!="reject" and choice7.lower() != "a" and choice7.lower()!= "accept":
+            choice7= raw_input("a. Get a knife it may be useful later b. Keep walking you are running out of time...")
+            while choice7.lower() != "b" and choice7.lower() != "a":
                 print "You cannot always run away from making decison. It is your obligation to decide."
-                choice7= raw_input("Quick, make a decision, we don't have that much time left: a. Accept b. Reject...")
-            if choice7 == "a":
+                choice7= raw_input("Quick, make a decision, we don't have that much time left: a. Get the knife b. Keep going...")
+            #go to kitch
+            if choice7.lower() == "a":
                 raw_input("You open the door of the kitchen, you hear the exhasut fan running.")
                 raw_input("Weird, you do not remember when did you turn on the fan.")
                 raw_input("You saw two people standing in your kitchen, you recognize one of them.")
-                raw_input("'Sarah!' You yell at your fiancee, but she doesn't seem to recognize you.")
+                raw_input("'Sarah!' You yell at your ex-fiancee, but she doesn't seem to recognize you.")
                 raw_input("They knock you down, 'The other one must be BOB', you realize")
                 raw_input("They turn off the exhaust fan, you smell sulfur.")
                 raw_input("BOB punches you in your stomach, you are going to loose consciousness. You know they are going to blow up your house.")
-                raw_input("")
-#still have to finish this ending
-
+                raw_input("Your mind starts to wonder. You are confused why Sarah wants to kill you, you loved her so much that you even bought her a really expensive engagement ring.")
+                raw_input("Maybe it is because she finds out your secret, the secret you hide from the world.")
+                raw_input("If you could go back in time, before Sarah broke up with you in the park, things could end up differently...")
+                raw_input("'This is by far the biggest clue we have found!'")
+                raw_input("'Guys, I think we are on the right track, but we still need more information.'")
+                raw_input("'We should try a slightly different path, maybe we will find a better answer...'")
+#keep walking
+            if choice7.lower() == "b":
+                raw_input("Forget about the knife, BOB is probably watching your action somewhere, you do not want to make him angry.")
+                raw_input("You enter your bedroom.")
+                raw_input("...")
+                raw_input("There is no one in your bedroom, you thought BOB will be there.")
+                raw_input("You open your drawer. Beside the from the dice, you also see a golden ring.")
+                raw_input("That was your engagment ring, your fiancee just broke up with you. What a stupid way it is to break up in your favorite park.")
+                raw_input("You text BOB: 'I have find the dice.")
+                raw_input("...")
+                raw_input("'Great! The game we are going to play is really simple. You just need to roll the dice and text me the number. I will also roll my six-sided dice, but my dice is slightly different than yours, there are only three different numbers. I can't tell you what those numbers are, but if the number you rolled out is the same with the number I rolled out, you will loose the game.'")
+                choice8= raw_input("You decide to: a. Roll the dice b. Runaway...")
+                while choice8.lower() != "b" and choice8.lower() != "a":
+                    print "You cannot always run away from making decison. It is your obligation to decide."
+                    choice8= raw_input("This is a really important! Make a decision!: a. Roll the dice b. Runaway...")
+                if choice8.lower() == "b":
+                    raw_input("You runaway, everything is insane! You have to get help!")
+                    raw_input("BANG...")
+                    raw_input("You have been shot. You fall on the floor. You saw two people, one is holding the gun, and the other one is Sarah, you ex-fiancee.")
+                    raw_input("The one holding the gun must be BOB. You assumed that Sarah hires BOB to kill you, becasue she found out your deepest secret. You were planning to kill her and burry her, but she has already taken action before you do...")
+                    raw_input("...")
+                    raw_input("'It ends here?'")
+                    raw_input("'These are enough to proof subject's intention, but we don't know where did the subject burry the victim")
+                    raw_input("'Run the system again, we need to find a better path.")
+                    raw_input("...")
+                    raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
+                    raw_input("But today is too quiet......")
+                if choice8.lower() == "b":
+                    import random
+                    directions2 = {
+                        ("1", "1"): True,
+                        ("1", "2"): False,
+                        ("1", "3"): False,
+                        ("1", "4"): False,
+                        ("1", "5"): False,
+                        ("1", "6"): False,
+                        ("2", "1"): False,
+                        ("2", "2"): True,
+                        ("2", "3"): False,
+                        ("2", "4"): False,
+                        ("2", "5"): False,
+                        ("2", "6"): False,
+                        ("6", "1"): False,
+                        ("6", "2"): False,
+                        ("6", "3"): False,
+                        ("6", "4"): False,
+                        ("6", "5"): False,
+                        ("6", "6"): True,
+                    }
+                    def game3(bob, dice):
+                        return directions2[(bob, dice)]
+                    def bob():
+                        return random.choice(["1","2","6"])
 
 
 
