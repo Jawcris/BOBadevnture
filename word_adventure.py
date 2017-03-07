@@ -185,13 +185,16 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
             raw_input("You feel something is pressed against your head")
             raw_input("Looks like your brain is not ready yet")
             print "You has been shot by someone, I assume it is BOB. I think this path is not the right one to the answer"
-            return "You has been shot by someone, I assume it is BOB. I think this path is not the right one to the answer"
+            return False
         for m in range(4):
             if q2.lower() == "window" and m <= 2:
-                q3 = raw_input("Next question: Why was the photographer arrested?")
+                q3 = raw_input("Next question: Why was the photographer arrested? You don't have to give me the answer for this, if you don't know, just keep on going and hit Enter ;)")
                 if q3 != "He shot his customers and blew them up":
                     print "'I know you will have a hard time answering this, I will just tell you the answer. The photographer shot the customers and blew them up!'"
-                    return "'I know you will have a hard time answering this, I will just tell you the answer. The photographer shot the customers and blew them up!'"
+                    return True
+                elif q3 == "He shot his customers and blew them up":
+                    print "Good job, I mean, the answers are all in your head. I just tried to make things easier for you."
+                    return True
             elif q2.lower() != "window" and m < 2:
                 print "Your answer is not correct " + str(2-m) + " out of 3 chances left~"
                 q2 = raw_input("Almost everyone sees me without noticing me, For what is beyond is what he or she seeks. What am I? (1 word):  ")
@@ -202,8 +205,53 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
             raw_input("You feel something is pressed against your head")
             raw_input("Looks like your brain is not ready yet")
             print "You has been shot by someone, I assume it is BOB. I think this path is not the right one to the answer."
-            return "You has been shot by someone, I assume it is BOB. I think this path is not the right one to the answer."
-    if end1() == "'I know you will have a hard time answering this, I will just tell you the answer. The photographer shot the customers and blew them up!'":
-        print "bob"
+            return False
+#if player answer the riddle correctly
+    if end1() is True:
+        raw_input("'Ha! The last one is just a small joke to make you more relaxed. Tight nerves won't help anyone to get the answer. Now, I have another game for you. I promise this is the last one.'")
+        raw_input("'I want you to go to your bed room, open the drawer right next to your bed, and find a six-sided dice.'")
+        raw_input("You are surprised that BOB knows about the drawer and the dice.")
+        raw_input("'Quick, the game need that dice to start!'")
+        choice6= raw_input("Knowing that BOB knows about the structure and details of your house, you decide to: a. Accept b. Reject...")
+        while choice6.lower() != "b" and choice6.lower()!="reject" and choice6.lower() != "a" and choice6.lower()!= "accept":
+            print "You cannot always run away from making decison. It is your obligation to decide."
+            choice6= raw_input("Quick, make a decision, we don't have that much time left: a. Accept b. Reject...")
+        #if reject to find the dice
+        if choice6.lower() == "b" or choice.lower() == "reject":
+            raw_input("You reject BOB, you do not want other people to decide what you are going to do. You have free will, you have the ability to choose whatever path you want to take.")
+            raw_input("There is no more text message coming from BOB. You think you are safe now.")
+            raw_input("You feel tired, after all of the things that have happened today. You sit on the couch, turn on the television, and fall asleep.")
+            raw_input("'Pause the operation!'")
+            raw_input("'BOB fails to interact with the subject, guys, we are stuck.")
+            raw_input("'I think we have encounter a BUG of this system, ha, those developers said they had removed all the BUGs. This is why I do not agree to cooperate with those people, we can do a much better job alone.'")
+            raw_input("'Restart the system, quick! We don't have much time left, let's just hope next time, we will find the right path and the answer.'")
+            raw_input("...")
+            raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
+            raw_input("But today is too quiet...")
+        if choice6.lower() == "a" or choice6.lower() == "accept":
+            raw_input("You think the safest way right now is to what BOB says. You head toward your bed room.")
+            raw_input("You are about to go pass your kitchen, there are knives in the kitchen...")
+            choice7= raw_input("a. Get a knife it may be useful later b. Keep walking you are running out of time")
+            while choice7.lower() != "b" and choice7.lower()!="reject" and choice7.lower() != "a" and choice7.lower()!= "accept":
+                print "You cannot always run away from making decison. It is your obligation to decide."
+                choice7= raw_input("Quick, make a decision, we don't have that much time left: a. Accept b. Reject...")
+            if choice7 == "a":
+                raw_input("You open the door of the kitchen, you hear the exhasut fan running.")
+                raw_input("Weird, you do not remember when did you turn on the fan.")
+                raw_input("You saw two people standing in your kitchen, you recognize one of them.")
+                raw_input("'Sarah!' You yell at your fiancee, but she doesn't seem to recognize you.")
+                raw_input("They knock you down, 'The other one must be BOB', you realize")
+                raw_input("They turn off the exhaust fan, you smell sulfur.")
+                raw_input("BOB punches you in your stomach, you are going to loose consciousness. You know they are going to blow up your house.")
+                raw_input("")
+#still have to finish this ending
+
+
+
+
+
+
+
+
 
 
