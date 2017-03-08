@@ -2,6 +2,7 @@
 name= raw_input("What is your name: ")
 raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
 raw_input("But today is too quiet...")
+raw_input("Even when every channel is reporting about the serial killer who has already killed 29 people, you feel isolated and bored.")
 raw_input("You do not see Mr. B walking his dogs toady, they walk pass you every day. You like his dogs, and they also seem to like you.")
 raw_input("...")
 raw_input("One hour has passed, you feel like you are at the bottom of the sea. You tried to text some friend, who you have not talked to since last year.")
@@ -149,7 +150,7 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
                         raw_input("'Restart the system, quick, we don't have much time left!'")
                         raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
                         raw_input("But today is too quiet...")
-                        raw_input("You do not see Mr. B walking his dogs toady, they walk pass you every day. You like his dogs, and they also seem to like you.....")
+                        raw_input("Even when every channel is reporting about the serial killer who has already killed 29 people, you feel isolated and bored......")
                     if result is False:
                         print "You failed to kill by the monster. I guess you are not ready yet."
                         raw_input("You lay on the ground, it hurts. The pain caused by the attack of the monster feel so real, it feels like you are actually bleeding. 'Hey BOB, I failed the game, what will happen to me?' You ask BOB.")
@@ -162,7 +163,7 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
                         raw_input("'I hope this time, we will find out the answer hidden in your head.'")
                         raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
                         raw_input("But today is too quiet...")
-                        raw_input("You do not see Mr. B walking his dogs toady, they walk pass you every day. You like his dogs, and they also seem to like you.....")
+                        raw_input("Even when every channel is reporting about the serial killer who has already killed 29 people, you feel isolated and bored......")
 #accept the game
 if choice2.lower() == "a" or choice2.lower()== "accept":
     raw_input("'I'm glad that you agree, things will be really messed up if you reject me. After all, you could quit anytime you want, but I won't guarantee what will happen on you and the victim.'")
@@ -217,7 +218,7 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
             print "You cannot always run away from making decison. It is your obligation to decide."
             choice6= raw_input("Quick, make a decision, we don't have that much time left: a. Accept b. Reject...")
         #if reject to find the dice
-        if choice6.lower() == "b" or choice.lower() == "reject":
+        if choice6.lower() == "b" or choice6.lower() == "reject":
             raw_input("You reject BOB, you do not want other people to decide what you are going to do. You have free will, you have the ability to choose whatever path you want to take.")
             raw_input("There is no more text message coming from BOB. You think you are safe now.")
             raw_input("You feel tired, after all of the things that have happened today. You sit on the couch, turn on the television, and fall asleep.")
@@ -277,7 +278,9 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
                     raw_input("...")
                     raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
                     raw_input("But today is too quiet......")
-                if choice8.lower() == "b":
+                if choice8.lower() == "a":
+                    raw_input("You roll the dice.")
+                    raw_input("...")
                     import random
                     directions2 = {
                         ("1", "1"): True,
@@ -303,6 +306,54 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
                         return directions2[(bob, dice)]
                     def bob():
                         return random.choice(["1","2","6"])
+                    def dice():
+                        return random.choice(["1","2","3","4","5","6"])
+                    bob = bob()
+                    dice = dice()
+                    result2 = game3(bob, dice)
+                    raw_input("It is " + dice)
+                    raw_input("You text BOB, 'I rolled out " + dice)
+                    raw_input("...")
+                    if result2 is True:
+                        raw_input("'Oh~ How unlucky, I also rolled out " + bob + " I guess you lose. Try to run, someone is coming for you~")
+                        raw_input("The bedroom door is opened, you saw someone holding a baseball bat.")
+                        raw_input("It is Sarah, your ex-fiancee.")
+                        raw_input("You are in extreme terror, you are afraid of Sarah, just like she is someone who has just risen from death. You cannot move.")
+                        raw_input("She hits you with the bat, as she hits harder, her face deforms. She starts to look like other people, some of them you recognize, some of them seems familiar. Those faces all look rotten and grievous.")
+                        raw_input("You are beaten to a point, even the weapon she holds starts to change. Gun, arrow, metal rod, knife...")
+                        raw_input("...")
+                        raw_input("'That's it? There must be more!")
+                        raw_input("'I guess this is not the right path to the answer, but we find out the weapons used by the subject.'")
+                        raw_input("'If we pick a different path, we might find out where he burried his 30th victim...'")
+                    elif result2 is False:
+                        raw_input("I rolled out " + bob + " How lucky! Now, go and see what is under your bed, I left you a weapon. You will need that for later. Someone is coming for you~")
+                        raw_input("You look under your bed, there is a baseball bat.")
+                        raw_input("Your bedroom door is opened.")
+                        raw_input("You saw Sarah, your ex-fiancee, also holding a baseball bat.")
+                        raw_input("She tries to attack you, but you block her attack, and knock her down to the floor.")
+                        raw_input("You lose control, you start hitting her until she is covered with blood.")
+                        raw_input("What have you done! You just killed your ex-fiancee!")
+                        raw_input("You receive a text message 'Opps, seems like you killed Sarah~ Now, you have to find somewhere to hind her~ Quick, I already called the police, they will be here in about 3 minutes'")
+                        def run():
+                            choice9 = raw_input("What should you do?: a. Go somewhere to burry the body b. Explain to the police...")
+                            for x in range(3):
+                                if choice9.lower() == "a":
+                                    raw_input("You carry Sarah's body to your car.")
+                                    return True
+                                elif choice9.lower() != "a":
+                                    raw_input("Are you kidding, you do not have time! I don't think the polices will listen to you when they see what did you do to Sarah!")
+                                    choice9= raw_input("Quick! Be wise!: a. Burry the body b. Wait for the police...")
+                            else:
+                                raw_input("The polices have arrived at your house.")
+                                return False
+                        if run() is True:
+                            raw_input("ba")
+                        elif run() is False:
+                            raw_input("You are caught by the police. You try to explain BOB to them, they think you are telling lies. They check your phone, you haven't recieve any message since last week.")
+                            raw_input("They identify the victim, it is the missing 30th victim of the serial killer.")
+                            
+
+
 
 
 
