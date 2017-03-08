@@ -347,10 +347,21 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
                                 raw_input("The polices have arrived at your house.")
                                 return False
                         if run() is True:
-                            raw_input("ba")
+                            raw_input("You start driving, you don't have a clear idea about where are you going, but you just keep driving.")
+                            raw_input("After around thirty minutes, you arrived at The Great Park, where Sarah broke with you. Yes! You are going to burry her in this park! Let her rots under the big oak tree, where she told you to get out of her life.")
+                            raw_input("You try to dig the ground under the oak tree, but no matter how hard you try, the hole just doesn't seem deep enough.")
+                            raw_input("Suddenly, you find something, it is a hand.")
+                            raw_input("You saw a golden ring in the hand, just like the one Sarah had.....")
+                            raw_input("'Pause! Pause! Pause! We find the answer! Quick! Tell them the body is burried under the oak tree in The Great Park!")
                         elif run() is False:
                             raw_input("You are caught by the police. You try to explain BOB to them, they think you are telling lies. They check your phone, you haven't recieve any message since last week.")
-                            raw_input("They identify the victim, it is the missing 30th victim of the serial killer.")
+                            raw_input("They identify the victim, it is the missing 30th victim of the serial killer...")
+                            raw_input("'I guess, our subject just killed his 30th victim again in the virtual reality created by his brain and our system.'")
+                            raw_input("'Now we know, what did he use to kill Sarah. However, we still have to find out where he burried her.'")
+                            raw_input("Quick! Restart the system, we are really close to the answer! Next time, try a slightly different path.")
+                            raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
+                            raw_input("But today is too quiet...")
+                            raw_input("Even when every channel is reporting about the serial killer who has already killed 29 people, you feel isolated and bored......")
                             
 
 
