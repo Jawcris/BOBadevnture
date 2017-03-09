@@ -61,7 +61,7 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
     raw_input("You are sitting in the interrogation room. It looks like the one you have seen in movies. Grey wall, grey wall seems to crush you.")
     raw_input("...")
     raw_input("Do you recognize the ring on her finger? Who were you with before you received the package? Do you recognize these faces?")
-    raw_input("These are the works done by that serial killer who already killed 28 people, of course, how could you not know, the news is everywhere!")
+    raw_input("These are the works done by that serial killer who already killed 29 people, of course, how could you not know, the news is everywhere!")
     raw_input("We have to protect you, maybe we could also catch that infamous killer. But the choice is still in your hand, you decide whether we will send people to be around you or not.")
     raw_input("...")
     #choice 3- have protection or not
@@ -71,10 +71,72 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
         choice3= raw_input("Now, pick one: a. Accept b. Reject...")
 # if accept protection
         if choice3.lower() == "a" or choice3.lower() == "accept":
-            print "bo"
-# if reject protection
+            raw_input("You accept the protection, of course you need protection, a serial killer just send you a hand!")
+            raw_input("...")
+            raw_input("Three days have passed, you are secretly watched and protected by some undercover police. You can still live your normal life, they are really doing a good job not disturbing you.")
+            raw_input("...")
+            raw_input("You receive a text message from an unknown number.")
+            raw_input("'Hi! This is BOB, it has been so long since I last talked to you. So, I decide to visit you! I will bring a huge surprise~'")
+            raw_input("You tell the police that BOB is going to visit you.")
+            raw_input("They plan to catch BOB when he arrives at your house. They tell you to not worry about anything, and everything will go with plan.")
+            raw_input("...")
+            raw_input("You receive another text message from BOB.")
+            raw_input("'Hey, go to your bedroom, I am entering your house through your window. Don't tell anyone.")
+            choice10 =raw_input("You decide to: a. Tell the police b. Go to the bedroom")
+            while choice10.lower() != "b" and choice10.lower() != "a":
+                print "You have to make a decision! Think carefully!"
+                choice10 =raw_input("You decide to: a. Tell the police b. Go to the bedroom")
+                    #tell police
+            if choice10.lower()== "a":
+                raw_input("You tell the undercover polices about BOB, they are going to hide in your bedroom.")
+                raw_input("...")
+                raw_input("You wait in your bedroom.")
+                raw_input("You hear someone trying to open your bedroom window. It must be BOB.")
+                raw_input("'Hey " + name + "! I bring you a gift! Open it. Don't worry, it won't hurt you, maybe.'")
+                raw_input("You are wondering why those polices are not catching BOB. You open the gift, it is a baseball bat. You remember you played baseball in your highschool.")
+                raw_input("'Does it reminds you of something? Do you still remember when is the last time you swing a bat? Does it feel good to hit something with a bat?'")
+                raw_input("As BOB is asking you some nonsense, those undercover polices come out. However, they are not planning to catch BOB")
+                raw_input("They gather around you, they stare at you, all 29 undecover polices.")
+                raw_input("Then their faces start to change, some grow blisters and become swellen, some even turn to white bones.")
+                raw_input("'Come on, try to remember! What you have done! What you did to those people! You can't just forget about them!'")
+                raw_input("The bat in your hand also starts to change, it changes to a gun, a knife, a bottle of poison...")
+                raw_input("You can't remember anything. You don't know what have you done. You are killed by the 29 people surrounding you.")
+                raw_input("'Brutal, but he deserves it!'")
+                raw_input("'We still haven't seen the clue about the 30th victim.'")
+                raw_input("'The subject did receive their engagment ring though.'")
+                raw_input("'Restart BOB, we did not choose the right path. Next time, we should try a different path.")
+                raw_input("...")
+                raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
+                raw_input("But today is too quiet...")
+                raw_input("Even when every channel is reporting about the serial killer who has already killed 29 people, you feel isolated and bored.")
+                # don't tell
+            if choice10.lower() == "b":
+                raw_input("You wait in your bedroom.")
+                raw_input("You hear someone trying to open your bedroom window. It must be BOB.")
+                raw_input("'Hey " + name + "! I bring you a gift! Open it. Don't worry, it won't hurt you, maybe.'")
+                raw_input("You open the gift, it is a baseball bat. You remember you played baseball in your highschool.")
+                raw_input("'Does it reminds you of something? Do you still remember when is the last time you swing a bat? Does it feel good to hit something with a bat?'")
+                raw_input("'How about these?'")
+                raw_input("The bat in your hand starts to change into a gun, a knife, a bottle of poison...")
+                raw_input("Those weapons are covered with blood.")
+                raw_input("'Come on, try to remember! What you have done! What you did you do with these things! You can't just forget about them!'")
+                raw_input("You can't remember anything. You don't know what have you done. Yet, it feels so familiar when you are holding these weapons.")
+                raw_input("BANG")
+                raw_input("BOB shot you.")
+                raw_input("'I guess your brain is not ready yet, there is nothing in your brain yet. Maybe next time, you will remember something~'")
+                raw_input("...")
+                raw_input("'Brutal, but he deserves it!'")
+                raw_input("'We still haven't seen the clue about the 30th victim.'")
+                raw_input("'The subject did receive their engagment ring though.'")
+                raw_input("'Restart BOB, we did not choose the right path. Next time, we should try a different path.")
+                raw_input("...")
+                raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
+                raw_input("But today is too quiet...")
+                raw_input("Even when every channel is reporting about the serial killer who has already killed 29 people, you feel isolated and bored.")
+
+        # if reject protection
         if choice3.lower() == "b" or choice3.lower() == "reject":
-            raw_input("You reject the protection. Deeply in your mind you know that this sense of liveliness is going to lead you into something horrible.")
+            raw_input("You reject the protection. Deeply in your mind you know that this sense of liveliness is going to lead you into something horrible. You don't want the polices to get involved in your life.")
             raw_input("...")
             raw_input("You sit down in your cozy couch in your living room. You feel isolated once again. No one is going to intrude your life, you think confidently.")
             raw_input("...")
@@ -99,7 +161,7 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
                 raw_input("...")
                 raw_input("You are hiding behind the bushes, she is walking on the natural path.  Leaves cover the ground, it must be Winter or Fall. You breathe heavily, looks like you are trying really hard to make sure she doesn't see you. When she walks pass a bench, you jumped out of the bushes. You grab her hand. She is resisting, and you try to calm her down...")
                 raw_input("...")
-                raw_input("'You are going to get sick if you sleep here, name. Wake up'")
+                raw_input("'You are going to get sick if you sleep here, " + name+ ". Wake up'")
                 raw_input("You open your eyes, yet everything looks so blurry.")
                 raw_input("'Don't worry, it is just some privacy protection mechanism. Your vision will be restored after you win the game. See, I just want to play a small game with you, you rejected me last time, so this time I bring a different game. I spend a lot of money on this by the way.'")
                 choice5= raw_input("BOB wants to play a game with you decide to: a. Accept b. Reject...")
@@ -125,7 +187,7 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
                         ("poison", "little monster"): True,
                         ("bat", "medium monster"): True,
                         ("gun", "medium monster"): True,
-                        ("posion'", "medium monster"): False,
+                        ("poison'", "medium monster"): False,
                         ("bat", "big monster"): False,
                         ("gun", "big monster"): True,
                         ("poison", "big monster"): False
@@ -133,21 +195,23 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
                     def game2(weapon, monster):
                         return directions[(weapon,monster)]
                     def monster():
-                        return random.choice(["big monster", "medium monster", "small monster"])
+                        return random.choice(["big monster", "medium monster", "little monster"])
                     weapon = raw_input("You find a bat, a gun , and a bottle of poison. You chose(just type the name of the weapon)...")
-                    while weapon != "bat" and weapon != "gun" and weapon != " poison":
+                    while weapon != "bat" and weapon != "gun" and weapon != "poison":
                         print "You just need to type: bat, gun, or poison. "
                         weapon= raw_input("Quick! Pick one: ")
                     monster = monster()
                     result = game2(weapon, monster)
+                    raw_input("You encounter a " + monster + ", you try to use your " + weapon + " to kill it...")
                     if result is True:
-                        print "Congradulation! You kill the monster! You receive a golden ring as a prize!"
+                        print "Congradulation! You killed the monster! You will receive a golden ring as a prize!"
                         raw_input("'Now take off your glasses.' You hear BOB talking to you. But you can't do what he says, there is no glasses on you.")
                         raw_input("'Ah, forget about the glasses now, it won't hurt you. Did you found anything when you killed the monster?")
                         raw_input("You tell him about the golden ring.")
                         raw_input("'Have you seen this ring before? Do you know the owner of this ring? Come on! You must remember something! There must be something left in your head!'")
-                        raw_input("'No? Nothing? Oh forget about it! It is not the right path, your brain is not ready yet. Maybe next time, next time we will find something.'")
-                        raw_input("'Restart the system, quick, we don't have much time left!'")
+                        raw_input("'No? Nothing? Oh forget about it! It is not the right path, subject's brain is not ready yet. Maybe next time, next time we will find something.'")
+                        raw_input("'Restart BOB, quick, we don't have much time left!'")
+                        raw_input("...")
                         raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
                         raw_input("But today is too quiet...")
                         raw_input("Even when every channel is reporting about the serial killer who has already killed 29 people, you feel isolated and bored......")
@@ -156,11 +220,13 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
                         raw_input("You lay on the ground, it hurts. The pain caused by the attack of the monster feel so real, it feels like you are actually bleeding. 'Hey BOB, I failed the game, what will happen to me?' You ask BOB.")
                         raw_input("...")
                         raw_input("At least one hour had passed, you start to wonder how come no one walking pass you notices something is wrong with you. You try to take off the glasses, yet, it seems like the glasses have dissappeared.")
-                        raw_input("'System reloading...' You say this infront of your eyes, apparently you are still in the virtual reality created by that glasses.")
+                        raw_input("'BOB reloading...'")
+                        raw_input("You see this infront of your eyes, apparently you are still in the virtual reality created by that glasses.")
                         raw_input("Suddenly, everything goes dark. After a few seconds, your vision becomes clearer and brighter.")
                         raw_input("You hear people talking... 'I guess our subject's brain is not ready yet'")
                         raw_input("'Apparently, that was not the right path to take.'")
                         raw_input("'I hope this time, we will find out the answer hidden in your head.'")
+                        raw_input("...")
                         raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
                         raw_input("But today is too quiet...")
                         raw_input("Even when every channel is reporting about the serial killer who has already killed 29 people, you feel isolated and bored......")
@@ -225,7 +291,7 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
             raw_input("'Pause the operation!'")
             raw_input("'BOB fails to interact with the subject, guys, we are stuck.")
             raw_input("'I think we have encounter a BUG of this system, ha, those developers said they had removed all the BUGs. This is why I do not agree to cooperate with those people, we can do a much better job alone.'")
-            raw_input("'Restart the system, quick! We don't have much time left, let's just hope next time, we will find the right path and the answer.'")
+            raw_input("'Restart BOB, quick! We don't have much time left, let's just hope next time, we will find the right path and the answer.'")
             raw_input("...")
             raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
             raw_input("But today is too quiet.......")
@@ -274,7 +340,7 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
                     raw_input("...")
                     raw_input("'It ends here?'")
                     raw_input("'These are enough to proof subject's intention, but we don't know where did the subject burry the victim")
-                    raw_input("'Run the system again, we need to find a better path.")
+                    raw_input("'Run BOB again, we need to find a better path.")
                     raw_input("...")
                     raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
                     raw_input("But today is too quiet......")
@@ -355,13 +421,15 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
                             raw_input("...")
                             raw_input("'Guys! We find the answer! Quick! Tell them the body is burried under the oak tree in The Great Park!'")
                             raw_input("'I can't believe this actually works! What a crazy idea it is to interact with the criminal's brain!'")
+                            raw_input("What else can we do, the subject has lost most of his memory, we have to use BOB to retrieve them.")
                             raw_input("Don't be so excited, those field people still have to dig under that oak tree, may be the body of the 30th victim is not burried there.....")
                         elif run() is False:
                             raw_input("You are caught by the police. You try to explain BOB to them, they think you are telling lies. They check your phone, you haven't recieve any message since last week.")
                             raw_input("They identify the victim, it is the missing 30th victim of the serial killer...")
                             raw_input("'I guess, our subject just killed his 30th victim again in the virtual reality created by his brain and our system.'")
                             raw_input("'Now we know, what did he use to kill Sarah. However, we still have to find out where he burried her.'")
-                            raw_input("Quick! Restart the system, we are really close to the answer! Next time, try a slightly different path.")
+                            raw_input("Quick! Restart BOB, we are really close to the answer! Next time, try a slightly different path.")
+                            raw_input("...")
                             raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
                             raw_input("But today is too quiet...")
                             raw_input("Even when every channel is reporting about the serial killer who has already killed 29 people, you feel isolated and bored......")
