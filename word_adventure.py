@@ -1,5 +1,8 @@
 # Git version - should use this one for now.
+print "Welcome to BOBadventure, please enter your name and hit 'Enter' to see more text. To make a choice, please enter the character infront of the option then hit 'Enter'. You might encounter questions that requires you to check on the internet."
 name= raw_input("What is your name: ")
+if name.lower() == "bob":
+    raw_input("What an interesting name!")
 raw_input("You are sitting in your living room, just checking your phone. There is nothing big happening around your area, it is very safe and peaceful here. Actually, this is why you chose live here, a small and quiet neighborhood, a lot better than the one you had.")
 raw_input("But today is too quiet...")
 raw_input("Even when every channel is reporting about the serial killer who has already killed 29 people, you feel isolated and bored.")
@@ -50,6 +53,7 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
     raw_input("you are back in peace. You are safe again.")
     raw_input("...")
     raw_input("You fall asleep")
+    raw_input("...")
     raw_input("You sit right next to someone, you cannot see her face. But you know you cherish her. She starts to run away from you, you desperately try to grab her hand. Yet, no matter how hard you try you just can't reach her.")
     raw_input("...")
     raw_input("Someone opened your door. You can hear it. You walk to your front door.")
@@ -60,9 +64,9 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
     raw_input("...")
     raw_input("You are sitting in the interrogation room. It looks like the one you have seen in movies. Grey wall, grey wall seems to crush you.")
     raw_input("...")
-    raw_input("Do you recognize the ring on her finger? Who were you with before you received the package? Do you recognize these faces?")
-    raw_input("These are the works done by that serial killer who already killed 29 people, of course, how could you not know, the news is everywhere!")
-    raw_input("We have to protect you, maybe we could also catch that infamous killer. But the choice is still in your hand, you decide whether we will send people to be around you or not.")
+    raw_input("'Do you recognize the ring on her finger? Who were you with before you received the package? Do you recognize these faces?'")
+    raw_input("'These are the works done by that serial killer who already killed 29 people, of course, how could you not know, the news is everywhere!'")
+    raw_input("'We have to protect you, maybe we could also catch that infamous killer. But the choice is still in your hand, you decide whether we will send people to be around you or not.'")
     raw_input("...")
     #choice 3- have protection or not
     choice3 = raw_input("Now, you know BOB is an extremely dangerous person, your blood is pumping faster, a sense of livliness in your plain life. You decided to: a. Accept b. Reject...")
@@ -82,10 +86,10 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
             raw_input("...")
             raw_input("You receive another text message from BOB.")
             raw_input("'Hey, go to your bedroom, I am entering your house through your window. Don't tell anyone.")
-            choice10 =raw_input("You decide to: a. Tell the police b. Go to the bedroom")
+            choice10 =raw_input("You decide to: a. Tell the police b. Go to the bedroom...")
             while choice10.lower() != "b" and choice10.lower() != "a":
                 print "You have to make a decision! Think carefully!"
-                choice10 =raw_input("You decide to: a. Tell the police b. Go to the bedroom")
+                choice10 =raw_input("You decide to: a. Tell the police b. Go to the bedroom...")
                     #tell police
             if choice10.lower()== "a":
                 raw_input("You tell the undercover polices about BOB, they are going to hide in your bedroom.")
@@ -99,8 +103,26 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
                 raw_input("They gather around you, they stare at you, all 29 undecover polices.")
                 raw_input("Then their faces start to change, some grow blisters and become swellen, some even turn to white bones.")
                 raw_input("'Come on, try to remember! What you have done! What you did to those people! You can't just forget about them!'")
-                raw_input("The bat in your hand also starts to change, it changes to a gun, a knife, a bottle of poison...")
+                raw_input("The bat in your hand also starts to change.")
+                import random
+                giftdirection = {
+                    "bottle of poison": False,
+                    "gun": True,
+                    "knife": False,
+                }
+                def game4(gift):
+                    return giftdirection[gift]
+                def gift():
+                    return random.choice(["bottle of poison", "gun", "knife"])
+                gift= gift()
+                raw_input("It turns to a " + gift+ ".")
+                ending = game4(gift)
+                if ending is True:
+                    raw_input("You shoot at those people, now, four of them is dead. You quickly run out of bullets.")
+                if ending is False:
+                    raw_input("It doesn't help that much when you are trying to fight a group of people, you are swallowed by the crowd.")
                 raw_input("You can't remember anything. You don't know what have you done. You are killed by the 29 people surrounding you.")
+                raw_input("...")
                 raw_input("'Brutal, but he deserves it!'")
                 raw_input("'We still haven't seen the clue about the 30th victim.'")
                 raw_input("'The subject did receive their engagment ring though.'")
@@ -178,7 +200,7 @@ if choice2.lower() == "b" or choice2.lower()=="reject":
                     raw_input("I assume it is BOB, I guess you did not make the right choice.")
 #accept the game
                 if choice5.lower() == "a" or choice5.lower() == "accept":
-                    raw_input("'The game is really simple. Here put on this pair of glasses, after I start the game, you will enter a virtual reality. There will be three weapons lying infornt of you, just follow your heart and pick one. Then you just need to fight the monster using your weapon. There are three types of monter, you never know which monster you will encounter. If you win, I will bring peace back to your life... Now, game starts!")
+                    raw_input("'The game is really simple. Here put on this pair of glasses, after I start the game, you will enter a virtual reality. There will be three weapons lying infornt of you, just follow your heart and pick one. Then you just need to fight the monster using your weapon. There are three types of monter, you never know which monster you will encounter. If you win, I will bring peace back to your life... Now, the game starts!'")
                     raw_input("You are not sure about what will happen if you lose.")
                     import random
                     directions = {
