@@ -352,7 +352,10 @@ if choice2.lower() == "a" or choice2.lower()== "accept":
                             raw_input("You try to dig the ground under the oak tree, but no matter how hard you try, the hole just doesn't seem deep enough.")
                             raw_input("Suddenly, you find something, it is a hand.")
                             raw_input("You saw a golden ring in the hand, just like the one Sarah had.....")
-                            raw_input("'Pause! Pause! Pause! We find the answer! Quick! Tell them the body is burried under the oak tree in The Great Park!")
+                            raw_input("...")
+                            raw_input("'Guys! We find the answer! Quick! Tell them the body is burried under the oak tree in The Great Park!'")
+                            raw_input("'I can't believe this actually works! What a crazy idea it is to interact with the criminal's brain!'")
+                            raw_input("Don't be so excited, those field people still have to dig under that oak tree, may be the body of the 30th victim is not burried there.....")
                         elif run() is False:
                             raw_input("You are caught by the police. You try to explain BOB to them, they think you are telling lies. They check your phone, you haven't recieve any message since last week.")
                             raw_input("They identify the victim, it is the missing 30th victim of the serial killer...")
